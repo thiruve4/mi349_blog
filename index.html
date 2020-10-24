@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1> Welcome to the MI_349 Blog Project</h1>
@@ -11,87 +12,90 @@
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <article>
-        <header>
-            <h2>The First Family-Friendly Hypercar has Arrived</h2>
-            <div >
-                <address class="author">By Abi Venkat</address> 
-                on <time datetime="2020-10-10" title="October 10th, 2020">October 10th, 2020</time>
-            </div>
-        </header>
-        <!-- 
-            Had to use style property here because W3C validator kept on giving me validation errors for using percentages for
-            the width and heigh properties.
-        -->
-        <img  style="width:40%; height:40%" src='koenigsegg_gemera.jpg' alt="Koeenigsegg gemera hypercar with doors lifted open vertically">
-        <table>
-            <tr>
-                <th>Measurement</th>
-                <th>Miles per Hour (mph)</th>
-                <th>Kilometers per Hour (kph)</th>
-            </tr>
-            <tr>
-                <td>Top Speed</td>
-                <td>249</td>
-                <td>400</td>
-            </tr>
-            <tr>
-                <td>Electric Top Speed</td>
-                <td>186</td>
-                <td>300</td>
-            </tr>
-            <tr>
-                <td>Acceleration</td>
-                <td>0-62 in 1.9 secs</td>
-                <td>0-100 in 1.9 secs</td>
-            </tr>
+    <section id="blog">
+        <h2>The Blog</h2>
+        <article class="blog-post">
+            <header>
+                <h3>The First Family-Friendly Hypercar has Arrived</h3>
+                <div >
+                    <address class="author">By Abi Venkat</address> 
+                    on <time datetime="2020-10-10" title="October 10th, 2020">October 10th, 2020</time>
+                </div>
+            </header>
+            <!-- 
+                Had to use style property here because W3C validator kept on giving me validation errors for using percentages for
+                the width and heigh properties.
+            -->
+            <img  src='koenigsegg_gemera.jpg' alt="Koeenigsegg gemera hypercar with doors lifted open vertically">
+            <table>
+                <tr>
+                    <th>Measurement</th>
+                    <th>Miles per Hour (mph)</th>
+                    <th>Kilometers per Hour (kph)</th>
+                </tr>
+                <tr>
+                    <td>Top Speed</td>
+                    <td>249</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>Electric Top Speed</td>
+                    <td>186</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Acceleration</td>
+                    <td>0-62 in 1.9 secs</td>
+                    <td>0-100 in 1.9 secs</td>
+                </tr>
+                
+            </table>
+            <p>
+                Koenigsegg is a sweedish hypercar manufacturer and they have recently developed one of the most powerful, but family-friendly hypercar
+                yet, the <em>Koenigsegg Gemera</em>. The Gemera is a mid-engine<br> vehicle that sports up to 1667 horsepower while at the same time 
+                being powered by a 3 piston engine. The engine uses their exclusive FreeValve technology to get these monstrous perofermance numbers,<br> 
+                while at the same time being able to comfortably seat four people. The car also contains a revolutionary hybrid driving system that allows
+                for conservation of gasoline by powering the engine using electricity<br> from the car’s battery where applicable. 
+                The car has an incredibly quick acceleration time of 0-100 km/h (62 mph) in 1.9 seconds and can reach a top speed of 249 mph. 
+                In electric mode this speed decreases<br> to 186 mph. The car only has 2 doors, but they are extremely large as seen in the picture and 
+                the open upwards showcasing that this isn’t just some ordinary car. The Gemera doesn’t have a fixed price yet,<br> but we will be able to 
+                see it in action next year with a starting price of at least $1 million.   
+            </p>
             
-        </table>
-        <p>
-            Koenigsegg is a sweedish hypercar manufacturer and they have recently developed one of the most powerful, but family-friendly hypercar
-            yet, the <em>Koenigsegg Gemera</em>. The Gemera is a mid-engine<br> vehicle that sports up to 1667 horsepower while at the same time 
-            being powered by a 3 piston engine. The engine uses their exclusive FreeValve technology to get these monstrous perofermance numbers,<br> 
-            while at the same time being able to comfortably seat four people. The car also contains a revolutionary hybrid driving system that allows
-            for conservation of gasoline by powering the engine using electricity<br> from the car’s battery where applicable. 
-            The car has an incredibly quick acceleration time of 0-100 km/h (62 mph) in 1.9 seconds and can reach a top speed of 249 mph. 
-            In electric mode this speed decreases<br> to 186 mph. The car only has 2 doors, but they are extremely large as seen in the picture and 
-            the open upwards showcasing that this isn’t just some ordinary car. The Gemera doesn’t have a fixed price yet,<br> but we will be able to 
-            see it in action next year with a starting price of at least $1 million.   
-        </p>
-        
-    </article>
-    <article>
-        <header>
-            <h2>A Video Game that Revolves Around Playing Soccer with Cars</h2>
-            <div >
-                <address class="author">By Abi Venkat</address> 
-                on <time datetime="2020-10-10" title="October 10th, 2020">October 10th, 2020</time>
-            </div>
-        </header>
-        <img  style="width:40%; height:40%" src='rocket-league.jpg' alt="CGI cars hitting a soccer ball into a goal">
-        <p>
-            <em> Rocket League </em> is a video game developed by Pysonix released to PC and Playstation 4 owners  in 2014. 
-            The game has taken off in popularity recently with Epic Games, developer of the incredibly<br> popular shooting game 
-            Fortnite, gaining acquisition of Pysonix. The game revolves around playing soccer against opponents with cars that 
-            you control in a game of soccer. You can drive with the car,<br> flip with it, and even fly with it using each car’s rocket 
-            boost with the main goal of getting the ball in your opponents goals. With the acquisition from Epic Games, the game 
-            recently became free to play,<br> as you had to purchase it before, so there is quite a lot of popularity with the game now 
-            as many new players are trying it. You can choose what car you want to play with and customize almost every little detail <br>
-            down to what your car engine sounds look to what the goal explosion animation looks like when you score. Rocket League is 
-            a great game to play with friends and there are other fun, extra modes you can play<br> like hockey and basketball. What’s great 
-            about this game as well is that it’s cross platform so you can play with any of your friends regardless of 
-            what device they choose to play from.    
-        </p>
-    </article>
-
-        <form>
-            <label>Sign up for our newsletter:
-                <input type="text">
-            </label>
-            <button>Subscribe</button>
-        </form>
+        </article>
+        <article class="blog-post">
+            <header>
+                <h3>A Video Game that Revolves Around Playing Soccer with Cars</h3>
+                <div >
+                    <address class="author">By Abi Venkat</address> 
+                    on <time datetime="2020-10-10" title="October 10th, 2020">October 10th, 2020</time>
+                </div>
+            </header>
+            <img src='rocket-league.jpg' alt="CGI cars hitting a soccer ball into a goal">
+            <p>
+                <em> Rocket League </em> is a video game developed by Pysonix released to PC and Playstation 4 owners  in 2014. 
+                The game has taken off in popularity recently with Epic Games, developer of the incredibly<br> popular shooting game 
+                Fortnite, gaining acquisition of Pysonix. The game revolves around playing soccer against opponents with cars that 
+                you control in a game of soccer. You can drive with the car,<br> flip with it, and even fly with it using each car’s rocket 
+                boost with the main goal of getting the ball in your opponents goals. With the acquisition from Epic Games, the game 
+                recently became free to play,<br> as you had to purchase it before, so there is quite a lot of popularity with the game now 
+                as many new players are trying it. You can choose what car you want to play with and customize almost every little detail <br>
+                down to what your car engine sounds look to what the goal explosion animation looks like when you score. Rocket League is 
+                a great game to play with friends and there are other fun, extra modes you can play<br> like hockey and basketball. What’s great 
+                about this game as well is that it’s cross platform so you can play with any of your friends regardless of 
+                what device they choose to play from.    
+            </p>
+        </article>
+    </section>
+    <form>
+        <label>Sign up for our newsletter:
+            <input type="text">
+        </label>
+        <button>Subscribe</button>
+    </form>
 
 
     
