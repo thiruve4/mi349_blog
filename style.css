@@ -12,6 +12,37 @@ body {
     border-top: 10px solid rgb(51, 51, 51);
 }
 
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav > ul li {
+    display: inline-block;
+}
+  
+nav > ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+nav > ul li a:hover {
+background-color: #111;
+}
+
 img[alt] {
     width: 40%;
     height: 40%;
@@ -36,16 +67,50 @@ p {
 
 form {
     margin-top: 20px;
+    display: flex;
+    background: #ccc;
+    align-items: center;
 }
 
-a:link {
-    color:  rgb(51, 51, 51);
-}
-
-a:visited {
-   color: rgb(109, 109, 109);
+label {
+    background: #999;
+    padding: 20px;
+    margin: 20px;
 }
 
 a:hover {
     color: rgb(184, 120, 214); 
   }
+
+textarea {
+    resize: none;
+    width: 200px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.newsletter {
+    display: flex;
+    background: #ccc;
+    text-align:center;
+}
+
+.newsletter p {
+    background: #999;
+    padding: 10px;
+    margin: 20px;
+   
+}
+
+.newsletter p:nth-of-type(1) {
+    flex: 1
+}
+
+.newsletter p:nth-of-type(2) {
+    flex: 3
+}
+
+.newsletter p:nth-of-type(3) {
+    flex: 1
+}
+
